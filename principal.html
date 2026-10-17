@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/principal.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Mi página principal</h1>
+        <p id="saludo" class="subtitulo"></p>
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+            <button id="btn-salir" class="btn btn-peligro">Cerrar Sesión</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tarjeta">
+            <h2>Panel Privado</h2>
+            <p>Este contenido se ve después de iniciar sesión de forma segura.</p>
+            <p id="info-rol"></p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Mis Notas Guardadas (Practica de JSON en LocalStorage)</h2>
+            <form id="form-notas" class="formulario">
+                <div class="campo">
+                    <label for="nueva-nota">Escribe un recordatorio o apunte:</label>
+                    <input type="text" id="nueva-nota" placeholder="Ej: Repasar Fetch y JSON para la clase" required>
+                </div>
+                <button type="submit" class="btn">Guardar Nota</button>
+            </form>
+            <ul id="lista-notas"></ul>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
